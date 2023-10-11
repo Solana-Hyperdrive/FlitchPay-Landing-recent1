@@ -9,7 +9,7 @@ export default function LandingHero() {
 
   return (
     <>
-    <div class="bg-white p-10 m-2 h-screen">
+    <div className="bg-white p-10 m-2 h-screen">
       {/* {Hero Heading} */}
       <h1 className="absolute left-10 top-28 z-10 w-fit p-0 text-left text-4xl font-extrabold text-white mix-blend-exclusion md:left-20 md:top-64 md:text-7xl">
         TrustAuthX <br />
