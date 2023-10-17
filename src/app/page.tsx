@@ -9,7 +9,7 @@ import Navbar from "../components/Navbar";
 
 export default function LandingPage() {
   // const isMobile = useMediaQuery("(max-width: 768px)");
-
+  
   return (
     <>
       <LandingHero />
