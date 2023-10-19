@@ -37,9 +37,9 @@ export default function RootLayout({
         `}
       </Script>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
