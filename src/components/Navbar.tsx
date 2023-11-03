@@ -1,24 +1,21 @@
 "use client";
 
 import React, { useState } from "react";
-import { TrustAuthXLogo } from "../../public/svgs/TrustAuthXLogo";
+import { FlitchPayLogo } from "../../public/svgs/FlitchPayLogo";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { GithubLogo } from "../../public/svgs/Github";
 import { VectorRight } from "../../public/svgs/VectorRight";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const internalLinks = [
-  { name: "Products", link: "" },
-  { name: "Customers", link: "" },
-  { name: "Enterprise", link: "https://tally.so/r/w2aQEL" },
-  { name: "Pricing", link: "#pricing" },
-  { name: "Contact us", link: "https://tally.so/r/wMNB8p" },
+  { name: "Docs", link: "" },
+  { name: "Communty", link: "" },
 ];
 
 const externalLinks = [
   { name: "Github" },
-  { name: "Docs" },
   { name: "Sign in" },
   { name: "Let’s Get Started" },
 ];
@@ -30,25 +27,26 @@ const ExternalLinks = () => (
       target="_blank"
     >
       <div className="flex items-center justify-start gap-1.5">
-        <GithubLogo />
-        <div className="font-semibold">Github</div>
+        <Button size={"sm"} variant={"outline"} className="gap-2">
+          <div>
+            <GithubLogo />
+          </div>
+          <div className="font-semibold">Star on Github</div>
+          <div className="rounded-sm bg-secondary px-1">36.8k</div>
+        </Button>
       </div>
     </Link>
-    <Link href="https://docs.trustauthx.com/" target="_blank">
-      <div className="font-semibold">Docs</div>
-    </Link>
     <Link href="https://app.trustauthx.com/" target="_blank">
-      <div className="font-semibold">Sign In</div>
+      <Button size={"sm"} variant={"outline"} className="font-semibold">
+        Sign In
+      </Button>
     </Link>
-
-    <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-5 py-2.5">
+    <div className="flex items-center justify-center">
       <Link href="https://app.trustauthx.com" target="_blank">
-        <div className="text-center font-semibold leading-normal text-white mix-blend-exclusion">
-          Let’s Get Started
-        </div>
+        <Button size={"sm"} variant={"default"}>
+          Get Started
+        </Button>
       </Link>
-      <div className="flex h-5 w-5 items-center justify-start gap-2 py-1.5 pr-2" />
-      <VectorRight />
     </div>
   </>
 );
@@ -56,26 +54,24 @@ const ExternalLinks = () => (
 function Navbar() {
   return (
     <>
-      <div className="  flex w-full justify-between  bg-[#000000]  px-14 text-white   md:py-[18px]">
+      <div className="flex w-full justify-between bg-background px-4 sm:px-16 md:py-2">
         {/*Internal Links*/}
-        <div className="flex items-center gap-7">
-          <TrustAuthXLogo />
-          <div className="hidden items-start justify-center gap-7 md:flex md:flex-wrap">
+        <div className="flex items-center gap-2">
+          <FlitchPayLogo />
+          <h1 className="text-lg font-extrabold">FlitchPay</h1>
+          <div className="ml-4 hidden items-start justify-center gap-4 md:flex md:flex-wrap">
             {internalLinks.map((link) => (
-              <Link
-                target={link.name === "Pricing" ? "" : "_blank"}
-                href={link.link}
-                key={link.name}
-                className="font-medium "
-              >
+              <Link href={link.link} key={link.name} className="font-medium ">
                 {link.name}
               </Link>
             ))}
           </div>
         </div>
 
+        {/* Personal/Bussiness Button */}
+
         {/*External Links*/}
-        <div className="hidden items-center justify-center gap-11 md:flex md:flex-wrap">
+        <div className="hidden items-center justify-center gap-4 md:flex md:flex-wrap">
           <ExternalLinks />
         </div>
 
@@ -105,7 +101,7 @@ function Navbar() {
                 </DropdownMenu.Item>
               ))}
 
-              <DropdownMenu.Separator className="DropdownMenuSeparator" />
+              <DropdownMenu.Separator className="border-b-1 w-full border" />
 
               <DropdownMenu.Item className="DropdownMenuItem">
                 <Link
@@ -113,13 +109,7 @@ function Navbar() {
                   target="_blank"
                   className="flex gap-3"
                 >
-                  <GithubLogo />
-                  GitHub
-                </Link>
-              </DropdownMenu.Item>
-              <DropdownMenu.Item className="DropdownMenuItem">
-                <Link href="https://docs.trustauthx.com/" target="_blank">
-                  Docs
+                  Github
                 </Link>
               </DropdownMenu.Item>
               <DropdownMenu.Item className="DropdownMenuItem">
@@ -127,15 +117,9 @@ function Navbar() {
                   Sign In
                 </Link>
               </DropdownMenu.Item>
-              <div className="flex items-center justify-center gap-1 rounded-full border border-neutral-800 bg-white px-5 py-2.5">
-                <div className="text-center font-semibold leading-normal text-white mix-blend-exclusion">
-                  <Link href="https://app.trustauthx.com" target="_blank">
-                    Let’s Get Started
-                  </Link>
-                </div>
-                <div className="flex h-5 w-5 items-center justify-start gap-2 py-1.5 pr-2" />
-                <VectorRight />
-              </div>
+              <Button size={"sm"} >
+                Get Started
+              </Button>
             </DropdownMenu.Content>
           </DropdownMenu.Portal>
         </DropdownMenu.Root>

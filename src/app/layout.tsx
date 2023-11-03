@@ -46,9 +46,9 @@ export default function RootLayout({
       </Script>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {/* <Navbar /> */}
+          <Navbar />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

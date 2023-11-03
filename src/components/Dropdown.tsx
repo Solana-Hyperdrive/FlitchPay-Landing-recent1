@@ -46,7 +46,7 @@ export function AccountDropdown() {
           <p>Secured by</p>
 
           <div className="flex  items-center gap-1">
-            <TrustAuthXLogo />
+            <FlitchPayLogo />
             TrustAuthX
           </div>
         </div>
@@ -133,7 +133,7 @@ export const LogOutSvg = () => {
   );
 };
 
-function TrustAuthXLogo() {
+function FlitchPayLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
