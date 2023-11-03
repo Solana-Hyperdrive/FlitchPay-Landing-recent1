@@ -1,10 +1,18 @@
 import React from "react";
 import Script from "next/script";
 import "../styles/globals.css";
-
+import { ThemeProvider } from "../components/ThemeProvider";
 import { Inter } from "next/font/google";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light", color: "white" },
+    { media: "(prefers-color-scheme: dark", color: "black" },
+  ],
+};
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({
@@ -18,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" suppressHydrationWarning className={inter.className}>
       <head>
         <title>TrustAuthX</title>
         <link rel="icon" href="./favicon.ico" />
@@ -37,9 +45,11 @@ export default function RootLayout({
         `}
       </Script>
       <body>
-        {/* <Navbar /> */}
-        {children}
-        {/* <Footer /> */}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {/* <Navbar /> */}
+          {children}
+          {/* <Footer /> */}
+        </ThemeProvider>
       </body>
     </html>
   );
