@@ -46,9 +46,11 @@ export default function RootLayout({
       </Script>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Navbar />
-          {children}
-          <Footer />
+          <div className="flex min-h-screen flex-col items-center">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

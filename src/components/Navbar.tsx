@@ -43,7 +43,7 @@ const ExternalLinks = () => (
     </Link>
     <div className="flex items-center justify-center">
       <Link href="https://app.trustauthx.com" target="_blank">
-        <Button size={"sm"} variant={"default"}>
+        <Button size={"sm"} variant={"primary"}>
           Get Started
         </Button>
       </Link>
@@ -117,7 +117,7 @@ function Navbar() {
                   Sign In
                 </Link>
               </DropdownMenu.Item>
-              <Button size={"sm"} >
+              <Button size={"sm"} variant={"primary"} >
                 Get Started
               </Button>
             </DropdownMenu.Content>

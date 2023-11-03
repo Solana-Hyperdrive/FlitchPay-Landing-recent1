@@ -13,11 +13,11 @@ export default function LandingPage() {
   return (
     <>
       <LandingHero />
-      <AiInCLI />
-      <GradientPlatform />
+      {/* <AiInCLI />
+      <GradientPlatform /> */}
       {/*       {!isMobile ? <Timeline /> : null} */}
-      <Authlite />
-      <Showcase />
+      {/* <Authlite />
+      <Showcase /> */}
       {/* <Customize /> */}
     </>
   );
