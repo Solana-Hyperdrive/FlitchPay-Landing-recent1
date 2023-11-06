@@ -1,17 +1,10 @@
 "use client";
-
-import appDemo from "public/images/AppDemo.webp";
-import Image from "next/image";
-import { useMediaQuery } from "@mantine/hooks";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { VectorRight } from "@/public/svgs/VectorRight";
 
 export default function LandingHero() {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
   return (
-    <section className="flex items-center bg-background py-12 md:py-24 lg:py-32 ">
+    <section className="flex items-center bg-background py-12 md:py-24 lg:pt-32 ">
       <div className="container mx-auto flex flex-col items-center md:px-36 ">
         <div>
           <div className="md:px-2">
@@ -31,7 +24,7 @@ export default function LandingHero() {
               <span className="text-primary">_</span>
             </div>
             <div className="mt-3 flex flex-col justify-between gap-6 px-2 md:w-1/2 ">
-              <p className="text-muted-foreground text-base">
+              <p className="text-base text-muted-foreground">
                 {"Appwrite's"} open-source platform lets you add Auth, DBs,
                 Functions and Storage to your product and build any application
                 at any scale, own your data, and use your preferred coding

@@ -6,19 +6,21 @@ import GradientPlatform from "../components/GradientPlatform";
 import LandingHero from "../components/LandingHero";
 import AiInCLI from "../components/AiInCLI";
 import Navbar from "../components/Navbar";
+import Timeline from "../components/Timeline";
+import Customize from "../components/Customize";
+import { useMediaQuery } from "@mantine/hooks";
+import { OrgTestimonials } from "../components/OrgTestimonials";
 
 export default function LandingPage() {
-  // const isMobile = useMediaQuery("(max-width: 768px)");
-  
   return (
     <>
       <LandingHero />
-      {/* <AiInCLI />
-      <GradientPlatform /> */}
-      {/*       {!isMobile ? <Timeline /> : null} */}
+      <GradientPlatform />
+      {/* {!isMobile ? <Timeline /> : null} */}
+      <OrgTestimonials />
       {/* <Authlite />
-      <Showcase /> */}
-      {/* <Customize /> */}
+      <Showcase />
+      <Customize /> */}
     </>
   );
 }
