@@ -10,6 +10,7 @@ import Timeline from "../components/Timeline";
 import Customize from "../components/Customize";
 import { useMediaQuery } from "@mantine/hooks";
 import { OrgTestimonials } from "../components/OrgTestimonials";
+import { WhatsFlitchPay } from "../components/WhatsFlitchPay";
 
 export default function LandingPage() {
   return (
@@ -18,6 +19,7 @@ export default function LandingPage() {
       <GradientPlatform />
       {/* {!isMobile ? <Timeline /> : null} */}
       <OrgTestimonials />
+      <WhatsFlitchPay />
       {/* <Authlite />
       <Showcase />
       <Customize /> */}
