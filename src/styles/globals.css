@@ -276,9 +276,9 @@
 
 #gradient-canvas {
   width: 100%;
-  --gradient-color-1: #9eff00;
-  --gradient-color-2: #00b89c;
-  --gradient-color-3: #d1ffd0;
-  --gradient-color-4: #fff;
+  --gradient-color-1: #ff0000;
+  --gradient-color-2: rgb(184, 0, 0);
+  --gradient-color-3: #000000;
+  --gradient-color-4: #000000;
   z-index: 0;
 }
