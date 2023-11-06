@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 
 const internalLinks = [
   { name: "Docs", link: "" },
-  { name: "Communty", link: "" },
+  { name: "Community", link: "" },
 ];
 
 const externalLinks = [
@@ -58,8 +58,8 @@ function Navbar() {
         {/*Internal Links*/}
         <div className="flex items-center gap-2">
           <FlitchPayLogo />
-          <h1 className="text-lg font-extrabold">FlitchPay</h1>
-          <div className="ml-4 hidden items-start justify-center gap-4 md:flex md:flex-wrap">
+          <h1 className="text-lg font-semibold cursor-pointer">FlitchPay</h1>
+          <div className="ml-4 hidden items-start justify-center gap-4 md:flex md:flex-wrap ">
             {internalLinks.map((link) => (
               <Link href={link.link} key={link.name} className="font-medium ">
                 {link.name}
