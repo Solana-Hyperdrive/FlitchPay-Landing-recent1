@@ -20,10 +20,10 @@ export default function LandingHero() {
           </div>
           <div className="flex flex-wrap justify-between">
             <div className="text-5xl tracking-wide md:w-1/2 md:px-2 md:text-6xl md:leading-tight">
-              Build like a team of hundreds
-              <span className="text-primary">_</span>
+              Web3 payments for the 
+              <span className="font-bold">  Internet.. 🌐</span>
             </div>
-            <div className="mt-3 flex flex-col justify-between gap-6 px-2 md:w-1/2 ">
+            <div className="mt-3 flex flex-col justify-between gap-6 px-6 py-4 md:w-1/2 ">
               <p className="text-base text-muted-foreground">
                 {"Appwrite's"} open-source platform lets you add Auth, DBs,
                 Functions and Storage to your product and build any application
@@ -31,10 +31,12 @@ export default function LandingHero() {
                 languages and tools.
               </p>
               <div className="flex gap-6">
-                <Button size={"sm"} variant={"primary"}>
+                <Button size={"sm"} variant={"primary"}
+                className="text-slate-800 font-medium">
                   Get Started
                 </Button>
-                <Button variant={"outline"} size={"sm"}>
+                <Button variant={"outline"} size={"sm"}
+                className="border-0 text-white">
                   Join the waitlist
                 </Button>
               </div>
