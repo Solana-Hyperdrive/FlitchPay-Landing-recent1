@@ -16,7 +16,7 @@ export function WhatsFlitchPay() {
         <HeadComponent />
         <div className="mt-14 flex flex-wrap gap-4 md:flex-nowrap md:px-14 md:text-lg">
           <div className="flex flex-col justify-between gap-8 rounded-md bg-secondary md:w-1/2 ">
-            <div className="flex flex-col justify-between gap-6  px-6 pt-6 md:px-14 md:pt-14">
+            <div className="flex flex-col justify-between gap-6  px-6 pt-6 md:pt-14">
               <div>
                 Sophisticated Checkouts
                 <span className="text-muted-foreground">
@@ -38,7 +38,7 @@ export function WhatsFlitchPay() {
             </div>
           </div>
           <div className="flex flex-col gap-12 rounded-md bg-secondary md:w-1/2 md:gap-16 ">
-            <div className="flex flex-col justify-between gap-8  px-6 pt-6 md:px-14 md:pt-14">
+            <div className="flex flex-col justify-between gap-8  px-6 pt-6 md:pt-14">
               <div>
                 On Make products & Sell
                 <span className="text-muted-foreground">
