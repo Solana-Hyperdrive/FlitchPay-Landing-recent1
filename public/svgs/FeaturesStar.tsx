@@ -3,9 +3,12 @@ import React from "react";
 export function FeaturesStar() {
   return (
     <svg
-      className="mr-1 inline-block h-4 w-4"
-      viewBox="0 0 26 26"
       xmlns="http://www.w3.org/2000/svg"
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+      fill="none"
+      className=""
     >
       <g clip-path="url(#clip0_281_14784)">
         <path
@@ -13,6 +16,16 @@ export function FeaturesStar() {
           fill="#5157E6"
         />
       </g>
+      <defs>
+        <clipPath id="clip0_281_14784">
+          <rect
+            width="24.6066"
+            height="24.6066"
+            fill="white"
+            transform="translate(0.467773 0.448242)"
+          />
+        </clipPath>
+      </defs>
     </svg>
   );
 }

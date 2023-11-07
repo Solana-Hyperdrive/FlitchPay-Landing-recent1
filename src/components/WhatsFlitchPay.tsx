@@ -16,7 +16,7 @@ export function WhatsFlitchPay() {
         <HeadComponent />
         <div className="mt-14 flex flex-wrap gap-4 md:flex-nowrap md:px-14 md:text-lg">
           <div className="flex flex-col justify-between gap-8 rounded-md bg-secondary md:w-1/2 ">
-            <div className="flex flex-col justify-between gap-6  px-6 pt-6 md:px-14 md:pt-14">
+            <div className="flex flex-col justify-between gap-6  px-6 pt-6 md:pt-14">
               <div>
                 Sophisticated Checkouts
                 <span className="text-muted-foreground">
@@ -38,7 +38,7 @@ export function WhatsFlitchPay() {
             </div>
           </div>
           <div className="flex flex-col gap-12 rounded-md bg-secondary md:w-1/2 md:gap-16 ">
-            <div className="flex flex-col justify-between gap-8  px-6 pt-6 md:px-14 md:pt-14">
+            <div className="flex flex-col justify-between gap-8  px-6 pt-6 md:pt-14">
               <div>
                 On Make products & Sell
                 <span className="text-muted-foreground">
@@ -71,8 +71,10 @@ function HeadComponent() {
         className="mx-auto hidden rounded-full bg-gradient-to-r from-[#5157E6] to-[#FFB800] p-[1px] brightness-90 contrast-150 focus:outline-none focus:ring-blue-600 focus-visible:ring-2 dark:brightness-125 dark:contrast-100 sm:block"
         href="#features"
       >
-        <div className="group relative overflow-hidden rounded-full bg-background/80 px-3 py-1">
-          <FeaturesStar />
+        <div className="flex items-center rounded-full bg-background/80 px-3 py-1">
+          <div className="-mb-1">
+            <FeaturesStar />
+          </div>
           <span className="bg-gradient-to-r from-[#5157E6] to-[#FFB800] bg-clip-text text-transparent">
             many features, wow{" "}
           </span>
