@@ -71,8 +71,10 @@ function HeadComponent() {
         className="mx-auto hidden rounded-full bg-gradient-to-r from-[#5157E6] to-[#FFB800] p-[1px] brightness-90 contrast-150 focus:outline-none focus:ring-blue-600 focus-visible:ring-2 dark:brightness-125 dark:contrast-100 sm:block"
         href="#features"
       >
-        <div className="group relative overflow-hidden rounded-full bg-background/80 px-3 py-1">
-          <FeaturesStar />
+        <div className="flex items-center rounded-full bg-background/80 px-3 py-1">
+          <div className="-mb-1">
+            <FeaturesStar />
+          </div>
           <span className="bg-gradient-to-r from-[#5157E6] to-[#FFB800] bg-clip-text text-transparent">
             many features, wow{" "}
           </span>
