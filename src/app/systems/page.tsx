@@ -80,22 +80,20 @@ enables users to engage in real-time conversations,
 express thoughts, and share information through
 concise messages called tweets"
           />
-
           <Card
             description="GitHub, a leading code collaboration and version
-         control platform, empowers developers and teams to
-         seamlessly collaborate on projects, manage code
-         repositories, and track changes with ease"
+          control platform, empowers developers and teams to
+          seamlessly collaborate on projects, manage code
+          repositories, and track changes with ease"
             icon={"/Github.svg"}
             name="Github"
           />
-
           <Card
             description="LinkedIn integration allows users to seamlessly
-           integrate their professional profiles, career
-           achievements, and industry insights across various
-           platforms and offers a comprehensive networking
-           experience"
+            integrate their professional profiles, career
+            achievements, and industry insights across various
+            platforms and offers a comprehensive networking
+            experience"
             icon={"/LinkedIn.svg"}
             name="Linkedin"
           />
