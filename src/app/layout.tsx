@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={inter.className}>
       <head>
-        <title>TrustAuthX</title>
+        <title>FlitchPay</title>
         <link rel="icon" href="./favicon.ico" />
       </head>
       <Script
