@@ -7,7 +7,7 @@ import Link from "next/link";
 export function FlitchPayFinal() {
   return (
     <section className="flex items-center">
-      <div className="md:min-w-[768px] md:max-w-[1600px] md:mx-auto items-center" >
+      <div className="items-center md:mx-auto md:min-w-[768px] md:max-w-[1600px]">
         <div
           style={{
             background:
