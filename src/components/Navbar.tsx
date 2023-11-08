@@ -10,7 +10,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const internalLinks = [
-  { name: "Docs", link: "" },
+  { name: "Docs", link: "https://docs.flitchcoin.com/" },
   { name: "Community", link: "" },
 ];
 
@@ -23,7 +23,7 @@ const externalLinks = [
 const ExternalLinks = () => (
   <>
     <Link
-      href="https://github.com/One-Click-Auth/Landing-Next-TrustAuthx"
+      href="https://github.com/Solana-Hyperdrive"
       target="_blank"
     >
       <div className="flex items-center justify-start gap-1.5">
@@ -36,13 +36,13 @@ const ExternalLinks = () => (
         </Button>
       </div>
     </Link>
-    <Link href="https://app.trustauthx.com/" target="_blank">
+    <Link href="https://ledger.flitchcoin.com/login" target="_blank">
       <Button size={"sm"} variant={"outline"} className="font-semibold">
         Sign In
       </Button>
     </Link>
     <div className="flex items-center justify-center">
-      <Link href="https://app.trustauthx.com" target="_blank">
+      <Link href="https://ledger.flitchcoin.com/login" target="_blank">
         <Button size={"sm"} variant={"primary"}>
           Get Started
         </Button>
@@ -113,7 +113,7 @@ function Navbar() {
                 </Link>
               </DropdownMenu.Item>
               <DropdownMenu.Item className="DropdownMenuItem">
-                <Link href="https://app.trustauthx.com/" target="_blank">
+                <Link href="https://ledger.flitchcoin.com/login" target="_blank">
                   Sign In
                 </Link>
               </DropdownMenu.Item>
