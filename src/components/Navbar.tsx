@@ -32,7 +32,7 @@ const ExternalLinks = () => (
             <GithubLogo />
           </div>
           <div className="font-semibold">Star on Github</div>
-          <div className="rounded-sm bg-secondary px-1">36.8k</div>
+          {/* <div className="rounded-sm bg-secondary px-1">36.8k</div> */}
         </Button>
       </div>
     </Link>
