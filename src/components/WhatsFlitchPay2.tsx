@@ -6,6 +6,9 @@ import inboundRelay from "@/public/images/inbound-relay.png";
 import Image from "next/image";
 import { Book } from "@/public/svgs/Book";
 import { Rocket } from "@/public/svgs/Rocket";
+import { InboundRelay } from "@/public/svgs/InboundRelay";
+import { Send } from "@/public/svgs/Send";
+import { Terminal } from "@/public/svgs/Terminal";
 
 export function WhatsFlitchPay2() {
   return (
@@ -65,10 +68,10 @@ export function WhatsFlitchPay2() {
                 </div>
                 <Image className="md:w-1/2" src={inboundRelay} alt="" />
               </div>
-              <div className="flex flex-wrap md:flex-nowrap gap-2 md:gap-4">
+              <div className="flex flex-wrap gap-2 md:flex-nowrap md:gap-4">
                 <Link
                   href="/"
-                  className="flex w-full md:w-1/2 items-center justify-between rounded-full px-2.5 py-0.5 md:text-[0.775rem] text-[0.7rem] hover:bg-gray-200"
+                  className="flex w-full items-center justify-between rounded-full px-2.5 py-0.5 text-[0.7rem] hover:bg-gray-200 md:w-1/2 md:text-[0.775rem]"
                   style={{ border: "1px solid hsla(234, 49%, 92%, 1)" }}
                 >
                   <div className="flex items-center gap-2 ">
@@ -77,11 +80,16 @@ export function WhatsFlitchPay2() {
                     </span>
                     Get Started
                   </div>
-                  <div className="font-semibold" style={{color:"hsla(236, 16%, 20%, 1)"}}>{">"}</div>
+                  <div
+                    className="font-semibold"
+                    style={{ color: "hsla(236, 16%, 20%, 1)" }}
+                  >
+                    {">"}
+                  </div>
                 </Link>
                 <Link
                   href="/"
-                  className="flex w-full md:w-1/2 items-center justify-between rounded-full px-2.5 py-0.5 md:text-[0.775rem] text-[0.7rem] hover:bg-gray-200"
+                  className="flex w-full items-center justify-between rounded-full px-2.5 py-0.5 text-[0.7rem] hover:bg-gray-200 md:w-1/2 md:text-[0.775rem]"
                   style={{ border: "1px solid hsla(234, 49%, 92%, 1)" }}
                 >
                   <div className="flex items-center gap-2 ">
@@ -90,31 +98,87 @@ export function WhatsFlitchPay2() {
                     </span>
                     Follow a Quickstart
                   </div>
-                  <div className="font-semibold" style={{color:"hsla(236, 16%, 20%, 1)"}}>{">"}</div>
+                  <div
+                    className="font-semibold"
+                    style={{ color: "hsla(236, 16%, 20%, 1)" }}
+                  >
+                    {">"}
+                  </div>
                 </Link>
               </div>
             </div>
             {/* card2 */}
             <div
-              className="flex  flex-col gap-4 p-6 md:w-1/2 md:p-10"
+              className="flex w-full text-xs justify-between flex-col flex-wrap items-center gap-4 p-6 md:w-1/2 md:flex-row md:flex-nowrap md:p-10"
               style={{
                 border: "1px solid hsla(234, 49%, 92%, 1)",
                 backgroundColor: "hsla(234, 49%, 92%, 1)",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-              blanditiis cupiditate, quidem culpa id, officiis earum aperiam
-              quae dolor pariatur iusto. Dignissimos illo repellat vitae? Nisi
-              necessitatibus sunt vero unde quia! Nulla molestias esse deleniti
-              necessitatibus, quasi est nihil id omnis fugit aspernatur? Placeat
-              pariatur facere quibusdam hic aliquam eaque, iusto eum libero
-              consequatur? Velit laborum quidem earum consectetur! Itaque amet
-              nobis neque accusamus nulla ut provident consectetur cum et
-              explicabo incidunt dolores eos aperiam doloremque odit
-              perspiciatis tempore asperiores obcaecati, laudantium quos
-              aspernatur modi quod optio. Sunt, pariatur praesentium. Non
-              cupiditate incidunt nisi, cum consequatur blanditiis eius officia
-              ut?
+              {/* card1 */}
+              <div className=" flex flex-wrap items-center md:flex-nowrap">
+                <div className=" flex-wrap items-center rounded-xl bg-white leading-none md:flex ">
+                  <div className="flex items-center">
+                    <div
+                      className="p-1.5"
+                      style={{
+                        borderRight: "2px solid hsla(234, 49%, 92%, 1)",
+                      }}
+                    >
+                      <Send />
+                    </div>
+                    <div className="p-1.5">Client</div>
+                  </div>
+
+                  <div
+                    className="p-1.5 text-xs"
+                    style={{ borderTop: "2px solid hsla(234, 49%, 92%, 1)" }}
+                  >
+                    &nbsp;{'"name":"Claude"'}&nbsp;
+                  </div>
+                </div>
+              </div>
+              <div className="rotate-90 md:rotate-0">{">"}</div>
+              {/* card2 */}
+              <div>
+                <div className=" flex-wrap items-center rounded-xl bg-white leading-none md:flex">
+                  <div className="flex items-center">
+                    <div
+                      className="p-2"
+                      style={{
+                        borderRight: "2px solid hsla(234, 49%, 92%, 1)",
+                      }}
+                    >
+                      <InboundRelay />
+                    </div>
+                    <div className="p-2">Inbound Relay</div>
+                  </div>
+                </div>
+              </div>
+              <div className="rotate-90 md:rotate-0 ">{">"}</div>
+              {/* card3 */}
+              <div>
+                <div className=" flex-wrap items-center rounded-xl bg-white leading-none md:flex ">
+                  <div className="flex items-center">
+                    <div
+                      className="p-1.5"
+                      style={{
+                        borderRight: "2px solid hsla(234, 49%, 92%, 1)",
+                      }}
+                    >
+                      <Terminal />
+                    </div>
+                    <div className="p-1.5">Server</div>
+                  </div>
+
+                  <div
+                    className="p-1.5 text-xs"
+                    style={{ borderTop: "2px solid hsla(234, 49%, 92%, 1)" }}
+                  >
+                    {'"name":"ev:Tk9D"'}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
