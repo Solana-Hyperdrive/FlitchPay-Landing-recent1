@@ -11,6 +11,8 @@ import Customize from "../components/Customize";
 import { useMediaQuery } from "@mantine/hooks";
 import { OrgTestimonials } from "../components/OrgTestimonials";
 import { WhatsFlitchPay } from "../components/WhatsFlitchPay";
+import { WhatsFlitchPay2 } from "../components/WhatsFlitchPay2";
+
 import { FlitchPayFinal } from "../components/FlitchPayFinal";
 
 export default function LandingPage() {
@@ -21,6 +23,7 @@ export default function LandingPage() {
       {/* {!isMobile ? <Timeline /> : null} */}
       <OrgTestimonials />
       <WhatsFlitchPay />
+      <WhatsFlitchPay2 />
       <FlitchPayFinal/>
       {/* <Authlite />
       <Showcase />

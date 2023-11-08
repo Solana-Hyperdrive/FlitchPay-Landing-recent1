@@ -18,11 +18,11 @@ export function WhatsFlitchPay() {
         <HeadComponent />
         <div className="mt-14 flex flex-wrap gap-4 md:flex-nowrap md:text-lg">
           {/* card1 */}
-          <div className="flex flex-col font-semibold justify-between gap-8 rounded-md bg-secondary md:w-1/2 ">
+          <div className="flex flex-col justify-between gap-8 rounded-md bg-secondary font-semibold md:w-1/2 ">
             <div className="flex flex-col justify-between gap-6  px-6 pt-6 md:px-14 md:pt-14">
               <div>
                 Sophisticated Checkouts
-                <span className="text-muted-foreground font-normal">
+                <span className="font-normal text-muted-foreground">
                   {" "}
                   create space to ask questions and have open-ended
                   conversations.
@@ -41,11 +41,11 @@ export function WhatsFlitchPay() {
             </div>
           </div>
           {/* card2 */}
-          <div className="flex flex-col font-semibold gap-12 rounded-md bg-secondary md:w-1/2 md:gap-16 ">
+          <div className="flex flex-col gap-12 rounded-md bg-secondary font-semibold md:w-1/2 md:gap-16 ">
             <div className="flex flex-col justify-between gap-8  px-6 pt-6 md:px-14 md:pt-14">
               <div>
                 On Make products & Sell
-                <span className="text-muted-foreground font-normal">
+                <span className="font-normal text-muted-foreground">
                   {" "}
                   allow communication and collaboration about code changes.
                 </span>
@@ -64,11 +64,11 @@ export function WhatsFlitchPay() {
           </div>
         </div>
         {/* card3 */}
-        <div className="flex font-semibold w-full gap-12 rounded-md bg-secondary md:gap-16 md:text-lg ">
+        <div className="flex w-full gap-12 rounded-md bg-secondary font-semibold md:gap-16 md:text-lg ">
           <div className="flex w-full flex-wrap md:flex-nowrap">
             <div className="pl-6 pt-6 md:w-5/12 md:pl-14 md:pt-14">
               On premise Messaging & Real-time Payments
-              <span className="text-muted-foreground font-normal">
+              <span className="font-normal text-muted-foreground">
                 {" "}
                 lets you support your favorite open source maintainers and
                 projects.
@@ -100,7 +100,7 @@ function HeadComponent() {
   return (
     <div className="mt-1 flex flex-col gap-3 px-4 text-center sm:px-0">
       <a
-        className="mx-auto hidden rounded-full bg-gradient-to-r from-[#5157E6] to-[#FFB800] p-[1px] brightness-90 contrast-150 focus:outline-none focus:ring-blue-600 focus-visible:ring-2 dark:brightness-125 dark:contrast-100 sm:block"
+        className="mx-auto rounded-full bg-gradient-to-r from-[#5157E6] to-[#FFB800] p-[1px] brightness-90 contrast-150 focus:outline-none focus:ring-blue-600 focus-visible:ring-2 dark:brightness-125 dark:contrast-100 "
         href="#features"
       >
         <div className="flex items-center rounded-full bg-background/80 px-3 py-1">
