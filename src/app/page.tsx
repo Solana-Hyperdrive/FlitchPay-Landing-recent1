@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useContext } from "react";
 import Footer from "../components/Footer";
 import Showcase from "../components/Showcase";
 import Authlite from "../components/Authlite";
@@ -14,20 +15,19 @@ import { WhatsFlitchPay } from "../components/WhatsFlitchPay";
 import { WhatsFlitchPay2 } from "../components/WhatsFlitchPay2";
 
 import { FlitchPayFinal } from "../components/FlitchPayFinal";
+import { useActivePage } from "./_context";
 
 export default function LandingPage() {
   return (
     <>
       <LandingHero />
       <GradientPlatform />
-      {/* {!isMobile ? <Timeline /> : null} */}
+      <Showcase />
       <OrgTestimonials />
       <WhatsFlitchPay />
       <WhatsFlitchPay2 />
-      <FlitchPayFinal/>
-      {/* <Authlite />
-      <Showcase />
-      <Customize /> */}
+      <FlitchPayFinal />
+
     </>
   );
 }

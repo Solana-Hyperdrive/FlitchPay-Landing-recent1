@@ -8,6 +8,7 @@ import { GithubLogo } from "../../public/svgs/Github";
 import { VectorRight } from "../../public/svgs/VectorRight";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { PersonalOrBusinessButton } from "./PersonalOrBusinessButton";
 
 const internalLinks = [
   { name: "Docs", link: "https://docs.flitchcoin.com/" },
@@ -22,10 +23,7 @@ const externalLinks = [
 
 const ExternalLinks = () => (
   <>
-    <Link
-      href="https://github.com/Solana-Hyperdrive"
-      target="_blank"
-    >
+    <Link href="https://github.com/Solana-Hyperdrive" target="_blank">
       <div className="flex items-center justify-start gap-1.5">
         <Button size={"sm"} variant={"outline"} className="gap-2">
           <div>
@@ -54,11 +52,11 @@ const ExternalLinks = () => (
 function Navbar() {
   return (
     <>
-      <div className="flex w-full justify-between bg-background px-4 sm:px-16 md:py-2">
+      <div className="flex w-full items-center  justify-between bg-background px-4 sm:px-16 md:py-2">
         {/*Internal Links*/}
         <div className="flex items-center gap-2">
           <FlitchPayLogo />
-          <h1 className="text-lg font-semibold cursor-pointer">FlitchPay</h1>
+          <h1 className="cursor-pointer text-lg font-semibold">FlitchPay</h1>
           <div className="ml-4 hidden items-start justify-center gap-4 md:flex md:flex-wrap ">
             {internalLinks.map((link) => (
               <Link href={link.link} key={link.name} className="font-medium ">
@@ -67,8 +65,8 @@ function Navbar() {
             ))}
           </div>
         </div>
-
         {/* Personal/Bussiness Button */}
+        <PersonalOrBusinessButton />
 
         {/*External Links*/}
         <div className="hidden items-center justify-center gap-4 md:flex md:flex-wrap">
@@ -113,11 +111,14 @@ function Navbar() {
                 </Link>
               </DropdownMenu.Item>
               <DropdownMenu.Item className="DropdownMenuItem">
-                <Link href="https://ledger.flitchcoin.com/login" target="_blank">
+                <Link
+                  href="https://ledger.flitchcoin.com/login"
+                  target="_blank"
+                >
                   Sign In
                 </Link>
               </DropdownMenu.Item>
-              <Button size={"sm"} variant={"primary"} >
+              <Button size={"sm"} variant={"primary"}>
                 Get Started
               </Button>
             </DropdownMenu.Content>

@@ -9,8 +9,13 @@ import { Rocket } from "@/public/svgs/Rocket";
 import { InboundRelay } from "@/public/svgs/InboundRelay";
 import { Send } from "@/public/svgs/Send";
 import { Terminal } from "@/public/svgs/Terminal";
+import { useActivePage } from "../app/_context";
 
 export function WhatsFlitchPay2() {
+  const {activePage} = useActivePage();
+  if (activePage=="Personal"){
+    return;
+  }
   return (
     <section className="flex items-center bg-white py-12 text-black md:py-24 lg:pt-32 ">
       <div className="container mx-auto flex flex-col items-center gap-16 md:gap-28 md:px-48 ">
