@@ -45,7 +45,7 @@ export default function RootLayout({
         `}
       </Script>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <ActivePageProvider>
             <div className="flex min-h-screen flex-col ">
               <Navbar />
