@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Script from "next/script";
 import "../styles/globals.css";
 import { ThemeProvider } from "../components/ThemeProvider";
@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Metadata } from "next";
-
+import { ActivePageProvider } from "./_context";
 export const metadata: Metadata = {
   themeColor: [
     { media: "(prefers-color-scheme: light", color: "white" },
@@ -46,11 +46,13 @@ export default function RootLayout({
       </Script>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex min-h-screen flex-col ">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+          <ActivePageProvider>
+            <div className="flex min-h-screen flex-col ">
+              <Navbar />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+          </ActivePageProvider>
         </ThemeProvider>
       </body>
     </html>

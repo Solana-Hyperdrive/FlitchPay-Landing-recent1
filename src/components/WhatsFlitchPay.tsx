@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export function WhatsFlitchPay() {
   return (
-    <section className="flex items-center bg-background py-12 md:py-24 lg:pt-32 ">
+    <section className="flex items-center bg-background py-14 md:py-24 lg:pt-32 ">
       <div className="container mx-auto flex flex-col items-center gap-4 md:px-48 ">
         <HeadComponent />
         <div className="mt-14 flex flex-wrap gap-4 md:flex-nowrap md:text-lg">

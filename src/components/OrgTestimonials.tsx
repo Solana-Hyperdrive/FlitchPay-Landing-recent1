@@ -11,8 +11,13 @@ import { Nestle } from "@/public/svgs/Nestle";
 import { Oracle } from "@/public/svgs/Oracle";
 import { Tiktok2 } from "@/public/svgs/Tiktok2";
 import React from "react";
+import { useActivePage } from "../app/_context";
 
 export function OrgTestimonials() {
+  const {activePage} = useActivePage();
+  if(activePage=="Personal"){
+    return;
+  }
   return (
     <section className="flex items-center bg-background  md:py-20 ">
       <div className="container mx-auto flex flex-col items-center gap-8 md:gap-20 md:px-36 ">
