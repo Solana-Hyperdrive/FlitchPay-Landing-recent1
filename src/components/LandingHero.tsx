@@ -40,7 +40,7 @@ export default function LandingHero() {
                   Get Started
                 </Button>
                 </Link>
-                <Link href="https://ledger.flitchcoin.com/login" target="_blank">
+                <Link href="https://tally.so/r/nrOxzR" target="_blank">
                 <Button
                   variant={"outline"}
                   size={"sm"}
