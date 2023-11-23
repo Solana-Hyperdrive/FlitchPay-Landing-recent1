@@ -39,6 +39,8 @@ export default function LandingHero() {
                 <Button size={"sm"} variant={"primary"} className="font-medium">
                   Get Started
                 </Button>
+                </Link>
+                <Link href="https://ledger.flitchcoin.com/login" target="_blank">
                 <Button
                   variant={"outline"}
                   size={"sm"}
