@@ -35,7 +35,7 @@ export default function LandingHero() {
                 <span className="font-medium"> Welcome</span> to the future of crypto transactions with <span className="font-semibold text-red-500">Flitchpay.</span>
               </p>
               <div className="flex gap-8">
-                <Link href="https://tally.so/r/nrOxzR" target="_blank">
+                <Link href="https://ledger.flitchcoin.com/login" target="_blank">
                 <Button size={"sm"} variant={"primary"} className="font-medium">
                   Get Started
                 </Button>
