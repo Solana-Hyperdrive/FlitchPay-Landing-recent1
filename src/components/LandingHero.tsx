@@ -36,18 +36,16 @@ export default function LandingHero() {
               </p>
               <div className="flex gap-8">
                 <Link href="https://ledger.flitchcoin.com/login" target="_blank">
-                <Button size={"sm"} variant={"primary"} className="font-medium">
+                <button className="Btn" data-text="Get Started">
                   Get Started
-                </Button>
+                </button>
                 </Link>
                 <Link href="https://tally.so/r/nrOxzR" target="_blank">
-                <Button
-                  variant={"outline"}
-                  size={"sm"}
-                  className="border-0 text-white cursor-pointer ml-2"
+                <button
+                  className="Btn" data-text="Join the Waitlist"
                 >
                   Join the waitlist
-                </Button>
+                </button>
                 </Link>
               </div>
             </div>

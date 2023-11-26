@@ -56,7 +56,7 @@ function HeadComponent() {
           <div className="-mb-1">
             <FeaturesStar />
           </div>
-          <span className="bg-gradient-to-r from-[#5157E6] to-[#FFB800] bg-clip-text text-transparent">
+          <span className="hover:text-white bg-gradient-to-r from-[#5157E6] to-[#FFB800] bg-clip-text text-transparent">
             many features, wow{" "}
           </span>
         </div>
