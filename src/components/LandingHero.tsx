@@ -20,7 +20,7 @@ export default function LandingHero() {
             </Button>
           </div>
           <div className="flex flex-wrap justify-between md:flex-nowrap">
-            <div className="text-5xl tracking-wide md:w-1/2 md:px-2 md:text-[3.5rem] md:leading-tight">
+            <div className="text-5xl tracking-wide md:w-1/2 md:px-2 md:text-[3.5rem] md:leading-tight text-white">
               Web3 payments for the
               <span className="font-bold"> Internet.. 🌐</span>
             </div>
