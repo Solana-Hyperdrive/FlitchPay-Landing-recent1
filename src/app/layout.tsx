@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Script from "next/script";
 import "../styles/globals.css";
 import { ThemeProvider } from "../components/ThemeProvider";
@@ -47,7 +47,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <ActivePageProvider>
-            <div className="flex min-h-screen flex-col ">
+            <div className="flex min-h-screen flex-col">
               <Navbar />
               <main className="flex-1">{children}</main>
               <Footer />
