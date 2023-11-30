@@ -41,7 +41,9 @@ export default function RootLayout({
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-7NXTY5KCKL');
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
+            page_path: window.location.pathname,
+          });
         `}
       </Script>
       <body>
