@@ -104,8 +104,8 @@ dependencies:
 
 devDependencies:
   '@types/react-syntax-highlighter':
-    specifier: ^15.5.7
-    version: 15.5.7
+    specifier: ^15.5.13
+    version: 15.5.13
   '@types/three':
     specifier: 0.144.0
     version: 0.144.0
@@ -170,6 +170,7 @@ packages:
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -1119,8 +1120,8 @@ packages:
       '@types/react': 18.2.21
     dev: false
 
-  /@types/react-syntax-highlighter@15.5.7:
-    resolution: {integrity: sha512-bo5fEO5toQeyCp0zVHBeggclqf5SQ/Z5blfFmjwO5dkMVGPgmiwZsJh9nu/Bo5L7IHTuGWrja6LxJVE2uB5ZrQ==}
+  /@types/react-syntax-highlighter@15.5.13:
+    resolution: {integrity: sha512-uLGJ87j6Sz8UaBAooU0T6lWJ0dBmjZgN1PZTrj05TNql2/XpC6+4HhMT5syIdFUUt+FASfCeLLv4kBygNU+8qA==}
     dependencies:
       '@types/react': 18.2.21
     dev: true
