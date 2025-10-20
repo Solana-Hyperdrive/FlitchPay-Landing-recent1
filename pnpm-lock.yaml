@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@mantine/hooks':
-    specifier: ^7.0.2
-    version: 7.0.2(react@18.2.0)
+    specifier: ^8.3.5
+    version: 8.3.5(react@18.2.0)
   '@next/font':
     specifier: ^13.5.4
     version: 13.5.4
@@ -170,6 +170,7 @@ packages:
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -281,10 +282,10 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: false
 
-  /@mantine/hooks@7.0.2(react@18.2.0):
-    resolution: {integrity: sha512-Zs0h7O9yI4Lhcebp/eXN+jfFSBS4jNuKRN5msj54decKcnA9ZxjkUpUqAwCNU0Re+cx6RFSBmB8eOA/+5sw+nA==}
+  /@mantine/hooks@8.3.5(react@18.2.0):
+    resolution: {integrity: sha512-0Wf08eWLKi3WkKlxnV1W5vfuN6wcvAV2VbhQlOy0R9nrWorGTtonQF6qqBE3PnJFYF1/ZE+HkYZQ/Dr7DmYSMQ==}
     peerDependencies:
-      react: ^18.2.0
+      react: ^18.x || ^19.x
     dependencies:
       react: 18.2.0
     dev: false
